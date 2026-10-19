@@ -19,7 +19,7 @@ render();
 <div id="authscreen" class="authscreen"><div class="authbox"><div class="brand" style="color:#172a46;padding:0 0 20px"><div class="mark">↗</div>Blueport</div><h1 id="authheading">Sign in</h1><p>Access your Blueport test account.</p><form id="authform"><label for="authmail">Email address</label><input id="authmail" type="email" autocomplete="email" required><label for="authpass">Password</label><input id="authpass" type="password" minlength="12" autocomplete="current-password" required><button class="btn" id="authsubmit" type="submit">Sign in</button></form><button class="link" id="authswitch" type="button">Create an account</button><button class="link" id="authreset" type="button">Forgot password?</button><p id="authmessage" class="autherror" role="status"></p><p class="authnote">Test version: onboarding records still live only in this browser. Don't enter real client information yet.</p></div></div>
 <script type="module">
 import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
-const sb=createClient('https://llmfdqwuchizwnxeclviv.supabase.co','sb_publishable_fOfWAYkRnj7rav0PKCmzpg_EE0TVO0r');
+const sb=createClient('https://lmfdqwuchizwnxeclviv.supabase.co','sb_publishable_fOfWAYkRnj7rav0PKCmzpg_EE0TVO0r');
 const screen=document.getElementById('authscreen'),message=document.getElementById('authmessage');
 const heading=document.getElementById('authheading'),submit=document.getElementById('authsubmit'),switcher=document.getElementById('authswitch');
 let signup=false;
